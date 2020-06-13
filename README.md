@@ -38,7 +38,8 @@ Bitcoin-Price-Notification --help
 
 you will see a Response like this
 
-```python
+```bash
+
 usage: 
     Usage: This app gives the price of 1 BTC in INR. Destination(-d) must be provided. To recive notification
     from IFTTT install IFTTT mobile app. To recive notifications on Telegram install Telegram app and join this channel 
