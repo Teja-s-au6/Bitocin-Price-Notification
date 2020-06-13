@@ -5,8 +5,8 @@ with open('README.md') as readme_file:
 
 
 setup(
-    name="Bitcoin-price-notifications",
-    version="1.0.1",
+    name="Bitcoinprice-notifications",
+    version="1.0.0",
     description="A Python package to get Bitcoin price.",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -24,7 +24,7 @@ setup(
     install_requires=["requests"],
     entry_points={
         "console_scripts": [
-            "Bitcoin-price-notifications=Bitcoin_Price_Notification.bitcoin_price_notify:main",
+            "Bitcoin-Price-Notification=Bitcoin_Price_Notification.bitcoin_price_notify:main",
         ]
     },
 )
