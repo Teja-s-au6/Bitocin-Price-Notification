@@ -1,1 +1,1 @@
-Bitcoin_Price_Notification
+Bitcoin_Price_Notifications

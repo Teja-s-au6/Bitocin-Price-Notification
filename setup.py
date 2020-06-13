@@ -1,16 +1,16 @@
 from setuptools import setup
 
 with open('README.md') as readme_file:
-    README = readme_file.read() 
+    README = readme_file.read()
 
 
 setup(
     name="Bitcoinprice-notifications",
-    version="1.0.3",
+    version="1.0.5",
     description="A Python package to get Bitcoin price.",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/Teja-s-au6/Bitcoin-Price-Notification",
+    url="https://github.com/Teja-s-au6/Bitocin-Price-Notification",
     author="Teja S",
     author_email="tejaspvg@gmail.com",
     license="MIT",
@@ -19,12 +19,12 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
     ],
-    packages=["Bitcoin_Price_Notification"],
+    packages=["Bitcoin_Price_Notifications"],
     include_package_data=True,
     install_requires=["requests"],
     entry_points={
         "console_scripts": [
-            "Bitcoin-Price-Notification=Bitcoin_Price_Notification.bitcoin_price_notify:main",
+            "Bitcoin-Price-Notification=Bitcoin_Price_Notifications.bitcoin_price_notify:main",
         ]
     },
 )

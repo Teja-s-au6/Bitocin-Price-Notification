@@ -1,8 +1,8 @@
 Metadata-Version: 2.1
 Name: Bitcoinprice-notifications
-Version: 1.0.3
+Version: 1.0.5
 Summary: A Python package to get Bitcoin price.
-Home-page: https://github.com/Teja-s-au6/Bitcoin-Price-Notification
+Home-page: https://github.com/Teja-s-au6/Bitocin-Price-Notification
 Author: Teja S
 Author-email: tejaspvg@gmail.com
 License: MIT

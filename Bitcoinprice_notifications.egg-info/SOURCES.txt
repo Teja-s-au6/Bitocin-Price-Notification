@@ -2,7 +2,7 @@ LICENSE
 MANIFEST.in
 README.md
 setup.py
-Bitcoin_Price_Notification/bitcoin_price_notify.py
+Bitcoin_Price_Notifications/bitcoin_price_notify.py
 Bitcoinprice_notifications.egg-info/PKG-INFO
 Bitcoinprice_notifications.egg-info/SOURCES.txt
 Bitcoinprice_notifications.egg-info/dependency_links.txt
