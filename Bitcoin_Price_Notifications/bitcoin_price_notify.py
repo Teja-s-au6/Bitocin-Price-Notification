@@ -101,19 +101,6 @@ def post_ifttt_emergency_notifications(event, value):
     post_ifttt_webhook(ifttt_webhook_emergency_ifttt_app, event, value)
     print('Channel message has been sent emergency ifttt app')
 
-
-def post_email_notifications(event, value):
-    print('post_email_notifications()')
-    post_ifttt_webhook(0, event, value)
-    print('Channel message has been sent to email')
-
-
-def post_email_emergency_notifications(event, value):
-    print('post_email_emergency_notifications()')
-    post_ifttt_webhook(0, event, value)
-    print('Channel message has been sent emergency email')
-
-
 def format_bitcoin_history(bitcoin_history):
     rows = []
     for bit_price in bitcoin_history:
@@ -137,12 +124,12 @@ def send_email(bitcoin_history):
     # Recipent Email
     recipent_email_address = input(
         'Please enter the Recipent/Reciver Email-id: ')
-    password = "ywjurqsfmrznflrc"
-    msg['From'] = "tejaspvg@gmail.com"
+    password = "cjptwurimvsaedid"
+    msg['From'] = "bitcoinpricenotifier@gmail.com"
     msg['To'] = recipent_email_address
     msg['Subject'] = "Bitcoin price, ACT FAST"
     message = "Dear " + recipent_name + "\nBitcoin prices are now " + str(
-        bitcoin_history) + ". Better buy quick.\nRegards,\n" + "\n Tejas"
+        bitcoin_history) + ". Better buy quick.\nRegards,\n" + "Tejas"
     msg.attach(MIMEText(message, 'plain'))
     server = smtplib.SMTP('smtp.gmail.com: 587')
     server.starttls()
@@ -160,7 +147,7 @@ def format_email_message(bitcoin_history):
         new_price = bit_price['price']
         # <b> (bold) tag creates bolded text
         # 26.03.2020 19:09: $<b>6877.4</b>
-        row = '{}: $</b>{}</b> USD'.format(date, new_price)
+        row = '{}: {} USD'.format(date, new_price)
         rows.append(row)
 
         # Use a <br> (break) tag to create a new line
