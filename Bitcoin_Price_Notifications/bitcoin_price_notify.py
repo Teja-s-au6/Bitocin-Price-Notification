@@ -109,7 +109,7 @@ def format_bitcoin_history(bitcoin_history):
         new_price = bit_price['price']
         # <b> (bold) tag creates bolded text
         # 26.03.2020 19:09: $<b>6877.4</b>
-        row = '{}: $</b>{}</b> USD'.format(date, new_price)
+        row = '{}: $</b>{}</b>'.format(date, new_price)
         rows.append(row)
 
         # Use a <br> (break) tag to create a new line
