@@ -28,7 +28,7 @@ Must have one of the following app installed and/or must join or follow one of t
 install bitcoin price notifier package using pip
 
 ```bash
-pip install Bitcoin-Price-Notification
+pip install Bitcoinprice-notifications
 ```
 For Help Menu
 
